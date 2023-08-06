@@ -7,7 +7,11 @@ export const FindContact = ()=>{
     const handlerChange = (e)=>{
         dispatch(filter({filter: e.target.value}))
     }
+    const handlerBlur = (e)=>{
+        e.target.value='';
+        dispatch(filter({filter: ''}));
+    }
     return(
-        <input type="text" onChange={handlerChange}/>
+        <input type="text" onChange={handlerChange} onBlur={handlerBlur}/>
     )
 }

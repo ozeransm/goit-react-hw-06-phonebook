@@ -6,9 +6,11 @@ import { Contacts } from "./Contacts";
 import { FindContact } from "./FindContact";
 import { Form } from "./Form";
 
+
 export const App = () => {
 
   return (
+    
     <div className={css.common}>
       <h1>Phonebook</h1>
       <Form/>
@@ -16,6 +18,6 @@ export const App = () => {
       <FindContact />
       <Contacts/>
     </div> 
-
+     
   );
 };
