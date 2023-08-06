@@ -6,8 +6,8 @@ import Notiflix from 'notiflix';
 
 export const Form = ()=>{
     const dispatch = useDispatch();
-    const nameContact = useSelector(state=>state.book.inputName).trim();
-    const phoneContact = useSelector(state=>state.book.inputPhone).trim();
+    const nameContact = useSelector(state=>state.book.inputName);
+    const phoneContact = useSelector(state=>state.book.inputPhone);
     function handleSubmit(e){
         e.preventDefault();
         // const nameContact = e.target.elements.name.value.trim();
