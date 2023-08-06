@@ -13,8 +13,8 @@ export const Form = ()=>{
         // const nameContact = e.target.elements.name.value.trim();
         // const phoneContact = e.target.elements.phone.value.trim();
         
-        if (nameContact&&phoneContact){
-          dispatch(addContact({id: nanoid(), name: nameContact, phone: phoneContact}))
+        if (nameContact.trim()&&phoneContact.trim()){
+          dispatch(addContact({id: nanoid(), name: nameContact.trim(), phone: phoneContact.trim()}))
           dispatch(inputName({inputName: ""}));
           dispatch(inputPhone({inputPhone: ""}));
           // e.target.elements.name.value='';
