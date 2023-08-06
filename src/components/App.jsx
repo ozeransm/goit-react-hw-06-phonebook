@@ -1,6 +1,3 @@
-// import { useDispatch, useSelector } from "react-redux";
-// import { addContact, increment } from "./redux/reducer";
-// import { nanoid } from "nanoid";
 import css from "./App.module.css";
 import { Contacts } from "./Contacts";
 import { FindContact } from "./FindContact";
