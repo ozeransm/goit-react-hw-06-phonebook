@@ -21,11 +21,11 @@ export const Form = ()=>{
         <form className={css.common} action="submit" onSubmit={handleSubmit} >
         <label htmlFor="name">
         <span>Name</span>
-          <input type="text" name="name" id="name" onFocus={(e)=>e.target.value=''}/>
+          <input type="text" name="name" id="name" />
         </label>
         <label htmlFor="phone">
         <span>Number</span> 
-          <input type="text" name="phone" id="phone" onFocus={(e)=>e.target.value=''}/>
+          <input type="text" name="phone" id="phone" />
         </label>
         <button type="submit" className={css.btnForm}>Add</button>
       </form>
