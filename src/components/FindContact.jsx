@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux";
-import { filter } from "./redux/reducer";
+import { filter } from "../redux/reducer";
 
 export const FindContact = ()=>{
     const dispatch = useDispatch();
